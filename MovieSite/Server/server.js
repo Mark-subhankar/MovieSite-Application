@@ -29,7 +29,7 @@ let redisClient;
 })();
 
 
-// here - top250-movies , most-popular-movies , most-popular-tv
+// here present - top250-movies , most-popular-movies , most-popular-tv
 app.get("/getMoviesDetails/:category", async (req, res) => {
 
   // retrive params valus 
@@ -160,7 +160,7 @@ app.get("/getMoviesDetails/:category", async (req, res) => {
   }
 });
 
-// here - upcoming movie
+// here present - upcoming movie
 app.get("/getUpcomingMoviesDetails/:country", async (req, res) => {
   let country = req.params.country.toUpperCase();
 
