@@ -1,0 +1,43 @@
+/* to Dark/Light mode ⬇️*/
+
+
+/* when it is lightMode => */
+
+:root {
+    --body_background: white;
+    --body_color: black;
+    --link_color: navy;
+    --nav_background: #60b4df;
+    --text_shadow: 5px 4px #ddb9b9;
+    --box_shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    --drop_down: #3183ac;
+}
+
+
+/* when it is DarkMode => */
+
+[data-theme="dark"] {
+    --body_background: rgb(2 2 48);
+    --body_color: white;
+    --link_color: cyan;
+    --nav_background: black;
+    --text_shadow: 5px 4px red;
+    --box_shadow: 0 8px 16px 0 #00008B, 0 6px 20px 0 #00008B;
+    --drop_down: #0f1619;
+}
+
+body {
+    background-color: var(--body_background);
+    color: var(--body_color);
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* from Dark/Light mode  ⬆️ */
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
